@@ -4,6 +4,14 @@
 
 写真の製品を1つずつ枠で囲み、ヒントとエージェントの Web 調査で商品名とサイズを特定し、[glbsmith](https://github.com/maromocooo/glbsmith) で実寸の GLB にまとめて作るローカル Web アプリ。
 
+## 単独利用と glbsmith / Room Setup との連携
+
+itemsmith は製品の特定・調査だけでも単独で使えます。部屋の写真と任意のヒントを渡し、製品候補の正誤を確認して、参照画像と寸法を見直します。ここで終了する場合、glbsmith や Room Setup のインストールは不要です。
+
+3D 化する場合は [glbsmith](https://github.com/maromocooo/glbsmith) を起動し、itemsmith の既存の一括作成機能から確認済みの写真と寸法を渡します。完成した GLB をダウンロードし、[Room Setup](https://github.com/maromocooo/room-setup) の **家具 → GLB を読み込む** で部屋に配置します。
+
+セットアップ、画面の操作名、手動読み込みの手順は **[統合ガイド（英語）](https://github.com/maromocooo/room-setup/blob/main/docs/end-to-end.md)** を参照してください。3つは独立したツールであり、部屋を完全自動で再現するものではありません。製品候補・参照画像・寸法・生成モデルはユーザーによる確認が必要です。
+
 ## 起動
 
 ```sh
