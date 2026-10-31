@@ -4,6 +4,14 @@
 
 A local web app that boxes each product in a photo, identifies its name and size from your hints and an agent's web research, and turns them into true-to-size GLB models in one batch with [glbsmith](https://github.com/maromocooo/glbsmith).
 
+## Use it on its own or with glbsmith and Room Setup
+
+itemsmith works independently for product identification and research: provide a room photo and optional hints, confirm or correct the product matches, and review the reference photos and dimensions. You can stop there without installing glbsmith or Room Setup.
+
+To continue into 3D, start [glbsmith](https://github.com/maromocooo/glbsmith) and use itemsmith's existing batch build flow to send the reviewed photos and dimensions to it. Download the resulting GLBs and use **Furniture → Import GLB** in [Room Setup](https://github.com/maromocooo/room-setup) to place them in a room.
+
+Follow the **[end-to-end guide](https://github.com/maromocooo/room-setup/blob/main/docs/end-to-end.md)** for setup, the Japanese UI labels and the manual import step. These are three independent tools, not a fully automatic room reconstruction: product matches, collected references, dimensions and generated models still need your review.
+
 ## Quick start
 
 ```sh
